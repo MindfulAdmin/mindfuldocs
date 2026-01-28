@@ -1,0 +1,106 @@
+site_name: MindfulDocs
+site_url: https://docs.mindfuldesign.me
+site_description: Documentation hub for Mindful Design WordPress plugins
+site_author: Mindful Design
+
+repo_name: MindfulAdmin/mindfuldesign-docs
+repo_url: https://github.com/MindfulAdmin/mindfuldesign-docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra_css:
+  - stylesheets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MindfulAdmin
+    - icon: fontawesome/brands/wordpress
+      link: https://mindfuldesign.me
+  generator: false
+
+copyright: Copyright &copy; 2026 Mindful Design
+
+nav:
+  - MindfulDocs: index.md
+  - MindfulMedia:
+    - Overview: mindfulmedia/index.md
+    - Getting Started: mindfulmedia/getting-started.md
+    - Shortcodes: mindfulmedia/shortcodes.md
+    - Features:
+      - Browse Page: mindfulmedia/features/browse-page.md
+      - Media Archive: mindfulmedia/features/media-archive.md
+      - Modal Player: mindfulmedia/features/modal-player.md
+      - Playlists: mindfulmedia/features/playlists.md
+      - User Engagement: mindfulmedia/features/user-engagement.md
+      - My Library: mindfulmedia/features/my-library.md
+      - MemberPress: mindfulmedia/features/memberpress.md
+      - Email Notifications: mindfulmedia/features/email-notifications.md
+    - Settings:
+      - Appearance: mindfulmedia/settings/appearance.md
+      - Layout: mindfulmedia/settings/layout.md
+      - Player: mindfulmedia/settings/player.md
+      - Archive & Browse: mindfulmedia/settings/archive-browse.md
+      - Engagement: mindfulmedia/settings/engagement.md
+      - Emails: mindfulmedia/settings/emails.md
+      - Access Control: mindfulmedia/settings/access-control.md
+      - Advanced: mindfulmedia/settings/advanced.md
+    - Page Builders:
+      - Gutenberg: mindfulmedia/page-builders/gutenberg.md
+      - Elementor: mindfulmedia/page-builders/elementor.md
+    - Developer:
+      - Hooks & Actions: mindfulmedia/developer/hooks.md
+      - Filters: mindfulmedia/developer/filters.md
+      - Database: mindfulmedia/developer/database.md
+      - CSS Customization: mindfulmedia/developer/customization.md

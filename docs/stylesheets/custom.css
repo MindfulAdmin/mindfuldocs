@@ -1,0 +1,305 @@
+/* MindfulMedia Documentation
+ * Matching Plugin Admin Styles - WooCommerce-style Interface
+ * 
+ * Brand Colors:
+ * Gold Primary: #e1ca8e
+ * Gold Medium: #b8a064
+ * Gold Dark: #93845e
+ * Text: #50575e (grey)
+ * Text Dark: #1d2327
+ * Background: #ffffff (white)
+ * Background Light: #f9f9f9
+ * Border: #dcdcde
+ */
+
+:root {
+    /* Brand gold palette */
+    --md-primary-fg-color: #b8a064;
+    --md-primary-fg-color--light: #e1ca8e;
+    --md-primary-fg-color--dark: #93845e;
+    --md-primary-bg-color: #ffffff;
+    --md-primary-bg-color--light: #f9f9f9;
+    
+    /* Accent - same gold */
+    --md-accent-fg-color: #b8a064;
+    --md-accent-fg-color--transparent: rgba(184, 160, 100, 0.1);
+    --md-accent-bg-color: #b8a064;
+    --md-accent-bg-color--light: #e1ca8e;
+    
+    /* Text colors - matching plugin */
+    --md-typeset-color: #50575e;
+    --md-default-fg-color: #1d2327;
+    --md-default-fg-color--light: #50575e;
+    --md-default-fg-color--lighter: #787c82;
+    
+    /* Borders */
+    --md-default-bg-color: #ffffff;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #e1ca8e;
+    --md-primary-fg-color--light: #e1ca8e;
+    --md-primary-fg-color--dark: #b8a064;
+    --md-accent-fg-color: #e1ca8e;
+    --md-accent-bg-color: #b8a064;
+}
+
+/* Header - gold background like WooCommerce style */
+.md-header {
+    background-color: #B8A064 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+}
+
+.md-header[data-md-state="shadow"] {
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2) !important;
+}
+
+.md-header__title {
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+.md-header__topic {
+    color: #ffffff !important;
+}
+
+.md-header__button.md-logo {
+    padding: 0.2rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 1.5rem;
+}
+
+/* Header icons - white on gold */
+.md-header .md-icon,
+.md-header__button:not(.md-logo) {
+    color: #ffffff !important;
+}
+
+.md-header .md-icon:hover,
+.md-header__button:not(.md-logo):hover {
+    color: #1d2327 !important;
+}
+
+/* Search bar */
+.md-search__input {
+    background-color: #f9f9f9 !important;
+    border: 1px solid #dcdcde !important;
+    color: #1d2327 !important;
+}
+
+.md-search__input::placeholder {
+    color: #787c82 !important;
+}
+
+.md-search__icon {
+    color: #50575e !important;
+}
+
+/* Tabs navigation - gold background to match header */
+.md-tabs {
+    background-color: #93845e !important;
+    border-bottom: none !important;
+}
+
+.md-tabs__link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.7rem;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+    color: #ffffff !important;
+}
+
+/* Navigation sidebar */
+.md-sidebar {
+    background: #ffffff;
+}
+
+.md-nav__title {
+    color: #1d2327;
+    font-weight: 600;
+}
+
+.md-nav__link {
+    color: #50575e;
+}
+
+.md-nav__link--active {
+    color: #b8a064 !important;
+    font-weight: 600;
+}
+
+.md-nav__link:hover {
+    color: #93845e !important;
+}
+
+.md-nav__item--nested > .md-nav__link {
+    color: #1d2327;
+}
+
+/* Content area */
+.md-content {
+    background: #ffffff;
+}
+
+.md-typeset h1 {
+    color: #1d2327;
+    font-weight: 400;
+    border-bottom: 1px solid #dcdcde;
+    padding-bottom: 0.5em;
+}
+
+.md-typeset h2 {
+    color: #1d2327;
+    font-weight: 600;
+}
+
+.md-typeset h3,
+.md-typeset h4 {
+    color: #2c3338;
+}
+
+/* Links */
+.md-typeset a {
+    color: #b8a064;
+}
+
+.md-typeset a:hover {
+    color: #93845e;
+}
+
+/* Code blocks */
+.md-typeset code {
+    background-color: #f9f9f9;
+    border: 1px solid #dcdcde;
+    color: #1d2327;
+    border-radius: 3px;
+}
+
+.md-typeset pre > code {
+    border: none;
+}
+
+/* Tables - WooCommerce style */
+.md-typeset table:not([class]) {
+    border: 1px solid #dcdcde;
+    font-size: 0.8rem;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: #f9f9f9;
+    color: #1d2327;
+    font-weight: 600;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.md-typeset table:not([class]) td {
+    border-bottom: 1px solid #dcdcde;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+    background-color: #f9f9f9;
+}
+
+/* Admonitions - tip style with gold */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+    border-color: #b8a064;
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+    background-color: rgba(184, 160, 100, 0.1);
+    border-color: #b8a064;
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+    background-color: #b8a064;
+}
+
+/* Buttons */
+.md-typeset .md-button {
+    background-color: #b8a064;
+    border-color: #b8a064;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.md-typeset .md-button:hover {
+    background-color: #93845e;
+    border-color: #93845e;
+    color: #ffffff !important;
+}
+
+.md-typeset .md-button--primary {
+    background-color: #b8a064;
+    border-color: #b8a064;
+    color: #ffffff;
+}
+
+.md-typeset .md-button--primary:hover {
+    background-color: #93845e;
+    border-color: #93845e;
+    color: #ffffff !important;
+}
+
+/* Footer */
+.md-footer {
+    background-color: #1d2327;
+}
+
+.md-footer-meta {
+    background-color: #1d2327;
+}
+
+/* Selection */
+::selection {
+    background-color: rgba(184, 160, 100, 0.3);
+}
+
+/* Horizontal rules */
+.md-typeset hr {
+    border-color: #dcdcde;
+}
+
+/* Lists */
+.md-typeset ul li::marker,
+.md-typeset ol li::marker {
+    color: #b8a064;
+}
+
+/* Blockquotes */
+.md-typeset blockquote {
+    border-left-color: #b8a064;
+    color: #50575e;
+}
+
+/* Clean navigation appearance */
+.md-nav__item {
+    padding: 0;
+}
+
+.md-nav__link {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+}
+
+/* Table of contents on the right */
+.md-sidebar--secondary .md-nav__link {
+    font-size: 0.7rem;
+}
+
+/* Logo styling - ensure it shows */
+.md-header__button.md-logo img {
+    height: 28px;
+    width: auto;
+}
