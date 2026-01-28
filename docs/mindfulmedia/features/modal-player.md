@@ -57,7 +57,7 @@ When viewing content in a playlist:
 
 The modal shows a "More Media" sidebar with related content:
 
-![Modal with Related Media](../../assets/images/mindfulmedia/modal-player.png)
+![Modal with Related Media](../../assets/images/mindfulmedia/modal-sidebar.png)
 
 ### Features
 
